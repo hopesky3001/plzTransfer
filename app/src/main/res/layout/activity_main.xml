@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TF_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TF_title"
+        android:textAppearance="@style/TF_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/TF_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="@string/TF_subtitle"
+        android:textAppearance="@style/TF_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/TF_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/TF_insert"
+        android:layout_width="100dp"
+        android:layout_height="100sp"
+        android:background="@drawable/pencil"
+        app:layout_constraintTop_toBottomOf="@+id/TF_subtitle"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/TF_check"
+        />
+
+    <Button
+        android:id="@+id/TF_check"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/graph"
+        app:layout_constraintTop_toBottomOf="@+id/TF_subtitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TF_insert"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TF_insertText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TF_insertText"
+        android:textAppearance="@style/TF_insertText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/TF_checkText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TF_insert"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/TF_checkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TF_checkText"
+        android:textAppearance="@style/TF_checkText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TF_insertText"
+        app:layout_constraintTop_toBottomOf="@id/TF_check"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/TF_help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/question"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintHorizontal_bias="0.9"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
